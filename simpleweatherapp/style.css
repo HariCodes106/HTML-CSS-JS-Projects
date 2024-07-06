@@ -1,0 +1,130 @@
+/* Google Form Input CSS color code
+
+Blue - #4285F4
+Red -  #DB4437
+Yellow - #F4B400
+Green - #0F9D58
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Unbounded";
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #222;
+}
+.card {
+  width: 100%;
+  max-width: 500px;
+  background-color: #222;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.search>input{
+    width: 86%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    transition: all .3s ease;
+    padding: 0 15px;
+}
+
+input:focus{
+    border-color: #4285F4;
+    outline: 1px solid #4285F4;
+}
+
+.search>button{
+  width: 10%;
+  border: 0;
+  outline: 0;
+  background: #fff;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search>button>i{
+  font-size: large;
+  color: black;
+}
+
+.weather-icon{
+  width: 170px;
+  margin-top: 30px;
+}
+
+.weather>h1{
+  font-size: 80px;
+  font-weight: 500;
+}
+.weather>h2{
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+
+.col{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+}
+
+.col img{
+  width: 30px;
+  margin-right: 5px;
+}
+
+.humidity,
+.wind{
+  font-size: 20px;
+  margin-top: -6px;
+}
+
+.weather{
+  display: none;
+}
+
+.error{
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+
+.error>p{
+  color: #DB4437;
+}
