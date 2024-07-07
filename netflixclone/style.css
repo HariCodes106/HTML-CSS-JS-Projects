@@ -1,0 +1,212 @@
+/* Fonts used by netflix itself */
+@font-face {
+  font-family: netflix-regular;
+  src: url("/fonts/NetflixSans_W_Rg.woff2");
+}
+@font-face {
+  font-family: netflix-medium;
+  src: url("/fonts/NetflixSans_W_Md.woff2");
+}
+@font-face {
+  font-family: netflix-bold;
+  src: url("/fonts/NetflixSans_W_Bd.woff2");
+}
+
+/* Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #000000;
+}
+#page1 {
+  height: 75vh;
+  width: 100%;
+  background: url("assets/bg1.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 40%;
+  position: relative;
+}
+
+.nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  z-index: 3;
+}
+
+.nav img {
+  height: 40px;
+  z-index: 3;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.options select {
+  padding: 7px 13px;
+  background-color: transparent;
+  color: white;
+  font-family: netflix-regular;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.options select option {
+  color: black;
+  font-family: netflix-regular;
+  font-size: 17px;
+}
+
+.options button {
+  color: white;
+  background-color: #e50914;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.options button:hover {
+  background-color: #bb0710;
+}
+
+.intro {
+  position: absolute;
+  z-index: 4;
+  top: 40%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  word-wrap: break-word;
+}
+
+.intro > h1 {
+  font-family: netflix-bold;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.intro > h2 {
+  font-family: netflix-regular;
+  font-size: 27px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.intro > h3 {
+  font-family: netflix-regular;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 20px;
+  letter-spacing: -1px;
+  word-spacing: 2px;
+}
+
+.get-started {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 450px;
+  margin-top: 20px;
+}
+
+.get-started input {
+  font-size: 17px;
+  background-color: transparent;
+  width: 70%;
+  padding: 10px 25px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+}
+
+.get-started button {
+  font-size: 16px;
+  background-color: #e50914;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 10px;
+  color: white;
+  font-family: netflix-regular;
+  transition: 0.3s;
+}
+
+.get-started button:hover {
+  background-color: #bb0710;
+}
+
+.border {
+  height: 10px;
+  width: 100%;
+  background-color: rgb(95, 94, 94);
+}
+
+#page2 {
+  height: 60vh;
+  padding: 40px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#page2 .description {
+  width: 50%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 15%;
+}
+
+#page2 .description h1 {
+  font-family: netflix-bold;
+  font-size: 40px;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#page2 .description h3 {
+  font-family: netflix-regular;
+  font-size: 22px;
+  text-align: left;
+  font-weight: 400;
+}
+
+#page2 .tv-container {
+  position: relative;
+  width: 50%; /* Adjust as needed */
+  height: auto;
+  overflow: hidden; /* Ensure video does not overflow */
+}
+
+
+#page3 {
+  height: 70vh;
+  background-color: blue;
+}

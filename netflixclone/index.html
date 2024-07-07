@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone - HTML, CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <div class="nav">
+        <div class="logo-header">
+          <img src="logo.svg" class="logo-ntflx" />
+        </div>
+
+        <div class="options">
+          <div>
+            <select name="language-selector">
+              <option value="English">English</option>
+              <option value="Hindi">हिंदी</option>
+            </select>
+          </div>
+          <div>
+            <button>Sign in</button>
+          </div>
+        </div>
+      </div>
+      <div class="intro">
+        <h1>Unlimited movies, TV shows and more</h1>
+        <h2>Watch anywhere. Cancel anytime.</h2>
+        <h3>
+          Ready to watch? Enter your email to create or restart your membership.
+        </h3>
+        <div class="get-started">
+          <input type="text" placeholder="Email Address" />
+          <button>Get Started<i class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+      <div id="page1"></div>
+
+      <div id="page2">
+        <div class="description">
+          <h1>Enjoy on your TV.</h1>
+          <h3>
+            Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+            players and more.
+          </h3>
+        </div>
+        <div class="tv-container">
+          <div class="video-overlay">
+            <video src="assets/video-tv-in.mp4" autoplay loop muted></video>
+          </div>
+        </div>
+      </div>
+      <div id="page3">
+        <div class="description"></div>
+        <div class="video-content"></div>
+      </div>
+    </div>
+  </body>
+</html>
